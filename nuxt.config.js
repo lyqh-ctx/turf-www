@@ -1,6 +1,9 @@
 var publicPath = process.env.npm_lifecycle_event === 'start' ? '' : '/js/'
 
 module.exports = {
+  router: {
+    base: './'
+  },
   srcDir: 'src',
   head: {
     title: 'Turf.js | Advanced geospatial analysis',
