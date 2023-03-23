@@ -1,4 +1,4 @@
-var publicPath = process.env.npm_lifecycle_event === 'start' ? '' : './js/'
+var publicPath = process.env.npm_lifecycle_event === 'start' ? '' : '/js/'
 
 module.exports = {
   srcDir: 'src',
