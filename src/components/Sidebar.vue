@@ -47,7 +47,7 @@ export default {
     },
     clickModule (e) {
       if (e.target.className.indexOf('heading') !== -1) return
-      if (this.$route.path === '/docs/') {
+      if (this.$route.path.indexOf( '/docs/') >-1) {
         document.getElementById(e.target.innerText).scrollIntoView()
         window.location.hash = e.target.innerText
       } else {
