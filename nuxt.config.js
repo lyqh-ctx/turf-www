@@ -1,5 +1,5 @@
 var publicPath = process.env.npm_lifecycle_event === 'start' ? '' : '/js/'
-
+var basePath = '/api/turf'
 module.exports = {
   router: {
     base: './'
@@ -13,7 +13,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Turf.js | Advanced geospatial analysis for browsers and Node.js' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: './favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: basePath + '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:200,400' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Istok+Web' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/iview/2.7.4/styles/iview.css' }
