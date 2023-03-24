@@ -2,7 +2,7 @@ var publicPath = process.env.npm_lifecycle_event === 'start' ? '' : '/js/'
 var basePath = '/api/turf'
 module.exports = {
   router: {
-    base: './'
+    base: basePath
   },
   srcDir: 'src',
   head: {
